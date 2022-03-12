@@ -37,11 +37,7 @@ function Todolist() {
     setNewTask(e.target.value);
   };
   const removeTask = (taskId) => {
-    setTasks(
-      tasks.filter((task) => {
-        if (task.id !== taskId) return task;
-      })
-    );
+    setTasks(tasks.filter((task) => task.id !== taskId));
   };
   return (
     <div className="container">
